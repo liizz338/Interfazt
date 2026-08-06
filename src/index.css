@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+/* FUENTE GLOBAL */
+
+* {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* BODY */
+
+body {
+  background: #111827; /* gris oscuro */
+  color: white;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937; /* gris */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ef4444;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #dc2626;
+}
+
+/* SWIPER PAGINACION */
+
+.swiper-pagination-bullet {
+  background: white !important;
+  opacity: 0.4 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ef4444 !important;
+  opacity: 1 !important;
+}
+
+/* FLECHAS */
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 999px;
+
+  background: rgba(31, 41, 55, 0.55); /* gris transparente */
+  backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+
+  color: rgba(255,255,255,.75) !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 22px !important;
+  font-weight: 200 !important;
+  color: rgba(255,255,255,.75) !important;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: rgba(55, 65, 81, 0.75); /* gris más claro */
+  transform: scale(1.08);
+}
+
+.swiper-button-prev:hover::after,
+.swiper-button-next:hover::after {
+  color: white !important;
+}
+
+.swiper-button-prev {
+  left: 30px !important;
+}
+
+.swiper-button-next {
+  right: 30px !important;
+}
+
+/* SELECCION DE TEXTO */
+
+::selection {
+  background: #ef4444;
+  color: white;
+}
+
+.swiper-pagination {
+  display: none !important;
+}
